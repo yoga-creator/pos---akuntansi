@@ -419,5 +419,37 @@ Sistem akan secara otomatis:
 * Kesalahan pencatatan lebih mudah ditemukan.
 * Membantu menentukan strategi stok, harga, dan promosi.
 
-  <img width="761" height="410" alt="image" src="https://github.com/user-attachments/assets/9a1f3c33-9177-4593-9468-b537f809a53d" />
+### Tampilan Aplikasi
+
+**login**
+ <img width="1600" height="729" alt="image" src="https://github.com/user-attachments/assets/e8693e8e-e8b6-484d-a122-96f5d97e24e0" />
+ 
+**Dashboard**
+<img width="959" height="434" alt="image" src="https://github.com/user-attachments/assets/c7b57a2e-784d-4814-9f39-d96002c55aa1" />
+
+**Barang**
+<img width="959" height="437" alt="image" src="https://github.com/user-attachments/assets/9d1f34c0-f6d0-4c41-8b2f-7034a299c27d" />
+
+**Supplier**
+<img width="959" height="436" alt="image" src="https://github.com/user-attachments/assets/8123520a-f22b-446f-8d18-35142ec33e0f" />
+
+**Penjualan**
+<img width="959" height="437" alt="image" src="https://github.com/user-attachments/assets/7a4e85a5-cdca-4b8c-8bc8-0b569b95756c" />
+
+**Pembelian**
+<img width="959" height="436" alt="image" src="https://github.com/user-attachments/assets/d8c780ac-66e2-48d5-be57-20d63bb80d4b" />
+
+**Laporan**
+<img width="956" height="434" alt="image" src="https://github.com/user-attachments/assets/15c4858c-9e06-40fe-9c4d-c5161e29a87b" />
+
+**Keuangan**
+<img width="959" height="431" alt="image" src="https://github.com/user-attachments/assets/0d2c02aa-ba92-4d39-a372-c5ee8d47f620" />
+
+**Pembagian Tugas**
+<img width="717" height="556" alt="image" src="https://github.com/user-attachments/assets/7c033cfa-45e1-4912-95c8-44a894a7bdbe" />
+
+
+
+
+
 
