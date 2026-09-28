@@ -100,47 +100,79 @@ Bagian **Login dan Dashboard** merupakan bagian awal yang penting dalam aplikasi
 **Data Barang & Stok**
 
 ---
-**Pengertian**
-Menu Data Barang & Stok digunakan untuk mengelola data barang yang dijual serta memantau jumlah stok yang tersedia di dalam aplikasi POS & Akuntansi. Stok akan otomatis bertambah saat terjadi pembelian dan berkurang saat terjadi penjualan.
+### Pengertian
 
-**Keterangan Data Barang**
+Halaman Data Barang & Stok merupakan halaman yang digunakan pengguna untuk mengelola daftar produk dan jumlah persediaan barang di dalam aplikasi **POS & Akuntansi**. Data pada halaman ini menjadi acuan bagi transaksi penjualan di kasir dan laporan keuangan toko.
 
-Halaman ini dipakai untuk mendaftarkan barang dagangan toko ke dalam sistem. Form "Tambah Barang" punya 5 kolom:
+### Fungsi Data Barang & Stok
 
-**Kolom	Fungsi**
-Kode	Kode unik barang (misalnya BRG001), supaya tiap barang mudah dibedakan dan dicari
-Nama Barang	Nama barang yang dijual (misalnya Indomie Goreng)
-Harga Beli	Harga modal, yaitu harga barang saat dibeli dari supplier
-Harga Jual	Harga yang dibayar pelanggan saat membeli di toko
-Stok	Jumlah barang yang tersedia saat ini
+Data Barang & Stok berfungsi untuk:
 
-Selisih Harga Jual − Harga Beli adalah keuntungan per barang, dan ini yang nanti dipakai di menu Laporan dan Keuangan.
+* Menyimpan data seluruh produk yang dijual di toko.
+* Mengatur harga beli, harga jual, kategori, dan satuan barang.
+* Memantau jumlah stok barang secara real-time.
+* Memberi peringatan ketika stok barang menipis atau habis.
+* Menjadi sumber data produk untuk transaksi penjualan dan laporan.
 
-##Keterangan Stok
+### Pengguna yang Terlibat
 
-Stok adalah jumlah barang yang masih ada di toko. Nilainya berubah otomatis mengikuti transaksi:
+* **Admin:** menambah, mengubah, menghapus data barang, serta mengatur dan menyesuaikan stok.
+* **Kasir:** umumnya hanya dapat melihat data barang dan stok tersedia saat melayani transaksi.
 
-Bertambah saat ada transaksi Pembelian (barang masuk dari supplier)
-Berkurang saat ada transaksi Penjualan (barang terjual ke pelanggan)
+### Komponen Halaman Data Barang & Stok
 
-Jadi stok awal diisi saat barang pertama kali ditambahkan, lalu selanjutnya diperbarui oleh sistem.
+* **Kolom pencarian:** untuk mencari barang berdasarkan nama atau kode/barcode.
+* **Filter kategori:** untuk menampilkan barang sesuai kelompok tertentu.
+* **Daftar barang:** menampilkan kode, nama barang, kategori, harga beli, harga jual, dan jumlah stok.
+* **Indikator stok:** penanda barang dengan stok menipis atau habis.
+* **Tombol Tambah Barang:** untuk memasukkan produk baru ke dalam sistem.
+* **Form data barang:** kolom isian kode, nama, kategori, satuan, harga beli, harga jual, dan stok awal.
+* **Tombol Edit:** untuk mengubah data barang yang sudah ada.
+* **Tombol Hapus:** untuk menghapus barang yang tidak dijual lagi.
+* **Penyesuaian stok:** untuk menambah atau mengurangi stok saat ada barang masuk, rusak, atau selisih hasil stok opname.
+* **Tombol Cetak / Ekspor:** untuk mencetak atau menyimpan daftar barang dan stok.
 
-**Alur Penggunaan**
-Login sebagai Administrator/Owner.
-Masuk ke Dashboard, lalu klik menu Data Barang.
-Isi form Tambah Barang: kode, nama, harga beli, harga jual, dan stok awal.
-Klik tombol Simpan Barang.
-Data barang tersimpan dan tampil di tabel daftar barang di bawah form.
-Barang tersebut sekarang bisa dipilih di menu Penjualan dan Pembelian.
-Setiap transaksi otomatis mengubah stok, dan hasilnya masuk ke Laporan dan Keuangan.
-Alur Singkat
+### Alur Pengelolaan Data Barang & Stok
 
-Login → Dashboard → Data Barang → Isi Form → Simpan Barang
-      → Barang muncul di daftar → Dipakai di Penjualan/Pembelian
-      → Stok berubah otomatis → Masuk Laporan & Keuangan
-      
-##Catatan
-Dari screenshot terlihat bahwa tugas kamu sebelumnya (di file README) adalah bagian Login dan Dashboard. Kalau sekarang kamu perlu menulis dokumentasi untuk bagian Data Barang dan Stok, saya bisa bantu buatkan kesimpulan tugasnya dengan format yang sama seperti "10. Kesimpulan Tugas Yoga", lengkap dengan daftar screenshot-nya. Mau saya buatkan?
+1. Admin login ke aplikasi menggunakan username dan password.
+2. Admin membuka menu **Data Barang & Stok**.
+3. Admin menekan tombol **Tambah Barang** untuk produk baru.
+4. Admin mengisi data barang seperti kode, nama, kategori, satuan, harga, dan stok awal.
+5. Admin menyimpan data, lalu barang muncul di daftar barang.
+6. Admin mengubah data atau harga melalui tombol **Edit** bila ada perubahan.
+7. Admin menambah stok ketika ada barang baru masuk dari pemasok.
+8. Admin melakukan penyesuaian stok jika hasil pengecekan fisik berbeda dengan data sistem.
+9. Admin memeriksa daftar barang dengan stok menipis untuk merencanakan pembelian ulang.
+
+### Proses Otomatis oleh Sistem
+
+Sistem akan secara otomatis:
+
+* Mengurangi stok barang setiap kali terjadi transaksi penjualan.
+* Menampilkan peringatan ketika stok mencapai batas minimum.
+* Memperbarui daftar barang yang tampil di halaman kasir.
+* Menyediakan data stok terbaru untuk laporan penjualan dan keuangan.
+
+### Tanggung Jawab Admin
+
+* Memastikan data barang, harga, dan satuan diinput dengan benar.
+* Memperbarui harga dan stok secara berkala.
+* Melakukan pengecekan stok fisik (stock opname) dan mencocokkannya dengan data sistem.
+* Menghindari duplikasi data barang dengan kode atau nama yang sama.
+* Merencanakan pembelian ulang barang yang hampir habis.
+
+### Tanggung Jawab Kasir
+
+* Memeriksa ketersediaan stok sebelum melayani pembelian pelanggan.
+* Melaporkan kepada admin jika stok di sistem tidak sesuai dengan barang di rak.
+* Melaporkan barang rusak atau kedaluwarsa agar dapat disesuaikan di sistem.
+
+### Manfaat
+
+* Persediaan barang tercatat rapi dan mudah dipantau.
+* Risiko kehabisan atau kelebihan stok dapat dikurangi.
+* Harga jual dan modal barang terdata dengan jelas.
+* Transaksi kasir dan laporan keuangan menjadi lebih akurat.
 
 ## Nama Anggota
 **Muhammad Rafli**
