@@ -257,3 +257,50 @@ screenshots/
 **01-login.png** → Screenshot halaman Login.
 
 **02-dashboard.png** → Screenshot halaman Dashboard.
+
+**Fadil Lutfyana Abdullah**
+
+## Bagian yang Dikerjakan
+
+**Data Barang & Stok**
+
+---
+Keterangan Data Barang
+
+Halaman ini dipakai untuk mendaftarkan barang dagangan toko ke dalam sistem. Form "Tambah Barang" punya 5 kolom:
+
+Kolom	Fungsi
+Kode	Kode unik barang (misalnya BRG001), supaya tiap barang mudah dibedakan dan dicari
+Nama Barang	Nama barang yang dijual (misalnya Indomie Goreng)
+Harga Beli	Harga modal, yaitu harga barang saat dibeli dari supplier
+Harga Jual	Harga yang dibayar pelanggan saat membeli di toko
+Stok	Jumlah barang yang tersedia saat ini
+
+Selisih Harga Jual − Harga Beli adalah keuntungan per barang, dan ini yang nanti dipakai di menu Laporan dan Keuangan.
+
+Keterangan Stok
+
+Stok adalah jumlah barang yang masih ada di toko. Nilainya berubah otomatis mengikuti transaksi:
+
+Bertambah saat ada transaksi Pembelian (barang masuk dari supplier)
+Berkurang saat ada transaksi Penjualan (barang terjual ke pelanggan)
+
+Jadi stok awal diisi saat barang pertama kali ditambahkan, lalu selanjutnya diperbarui oleh sistem.
+
+Alur Penggunaan
+Login sebagai Administrator/Owner.
+Masuk ke Dashboard, lalu klik menu Data Barang.
+Isi form Tambah Barang: kode, nama, harga beli, harga jual, dan stok awal.
+Klik tombol Simpan Barang.
+Data barang tersimpan dan tampil di tabel daftar barang di bawah form.
+Barang tersebut sekarang bisa dipilih di menu Penjualan dan Pembelian.
+Setiap transaksi otomatis mengubah stok, dan hasilnya masuk ke Laporan dan Keuangan.
+Alur Singkat
+
+Login → Dashboard → Data Barang → Isi Form → Simpan Barang
+      → Barang muncul di daftar → Dipakai di Penjualan/Pembelian
+      → Stok berubah otomatis → Masuk Laporan & Keuangan
+      
+Catatan
+
+Dari screenshot terlihat bahwa tugas kamu sebelumnya (di file README) adalah bagian Login dan Dashboard. Kalau sekarang kamu perlu menulis dokumentasi untuk bagian Data Barang dan Stok, saya bisa bantu buatkan kesimpulan tugasnya dengan format yang sama seperti "10. Kesimpulan Tugas Yoga", lengkap dengan daftar screenshot-nya. Mau saya buatkan?
