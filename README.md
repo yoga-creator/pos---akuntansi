@@ -446,6 +446,7 @@ Sistem akan secara otomatis:
 <img width="959" height="431" alt="image" src="https://github.com/user-attachments/assets/0d2c02aa-ba92-4d39-a372-c5ee8d47f620" />
 
 **Pembagian Tugas**
+
 <img width="717" height="556" alt="image" src="https://github.com/user-attachments/assets/7c033cfa-45e1-4912-95c8-44a894a7bdbe" />
 
 
