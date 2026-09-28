@@ -308,3 +308,81 @@ Setelah transaksi berhasil disimpan, sistem akan:
 * Stok barang selalu terupdate.
 * Laporan penjualan tersedia secara real-time.
 * Transaksi dapat dilacak per kasir dan per waktu.
+
+## Nama Anggota
+**Muhammad Iqbal Sonhaji**
+
+## Bagian yang Dikerjakan
+
+## Laporan & Keuangan
+
+### Pengertian
+
+Halaman Laporan & Keuangan merupakan halaman yang digunakan pengguna untuk melihat rekap transaksi dan kondisi keuangan toko di dalam aplikasi **POS & Akuntansi**. Data pada halaman ini berasal dari transaksi penjualan, pengeluaran, dan pencatatan stok yang sudah tersimpan di sistem.
+
+### Fungsi Laporan & Keuangan
+
+Laporan & Keuangan berfungsi untuk:
+
+* Menampilkan rekap penjualan harian, mingguan, dan bulanan.
+* Mencatat pemasukan dan pengeluaran toko.
+* Menghitung laba rugi secara otomatis.
+* Memantau arus kas masuk dan keluar.
+* Menjadi dasar pengambilan keputusan pemilik atau manajer toko.
+
+### Pengguna yang Terlibat
+
+* **Admin:** mengakses seluruh laporan, mencatat pengeluaran, dan menganalisis keuangan.
+* **Kasir:** umumnya tidak memiliki akses, atau hanya melihat rekap transaksi miliknya sendiri.
+
+### Komponen Halaman Laporan & Keuangan
+
+* **Filter periode:** untuk memilih rentang tanggal laporan (hari ini, minggu ini, bulan ini, atau tanggal tertentu).
+* **Ringkasan keuangan:** menampilkan total penjualan, total pengeluaran, dan laba.
+* **Laporan penjualan:** daftar transaksi lengkap dengan tanggal, kasir, dan nominal.
+* **Laporan produk terlaris:** menampilkan barang yang paling banyak terjual.
+* **Laporan stok:** menampilkan sisa stok dan barang yang hampir habis.
+* **Pencatatan pengeluaran:** untuk menginput biaya operasional seperti listrik, gaji, dan pembelian barang.
+* **Laporan laba rugi:** selisih antara pemasukan dan pengeluaran pada periode tertentu.
+* **Laporan arus kas:** rincian uang masuk dan uang keluar.
+* **Tombol Cetak / Ekspor:** untuk mencetak laporan atau menyimpannya dalam bentuk PDF atau Excel.
+
+### Alur Penggunaan Laporan & Keuangan
+
+1. Admin login ke aplikasi menggunakan username dan password.
+2. Admin membuka menu **Laporan & Keuangan**.
+3. Admin memilih jenis laporan yang ingin dilihat.
+4. Admin menentukan periode laporan melalui filter tanggal.
+5. Sistem menampilkan data sesuai periode yang dipilih.
+6. Admin memeriksa ringkasan penjualan, pengeluaran, dan laba.
+7. Admin mencatat pengeluaran baru jika ada biaya yang belum tercatat.
+8. Admin mencetak atau mengekspor laporan bila diperlukan.
+
+### Proses Otomatis oleh Sistem
+
+Sistem akan secara otomatis:
+
+* Menjumlahkan seluruh transaksi penjualan pada periode yang dipilih.
+* Mengurangi total pemasukan dengan pengeluaran untuk mendapatkan laba rugi.
+* Memperbarui laporan setiap kali ada transaksi baru.
+* Mengelompokkan data berdasarkan tanggal, kasir, dan produk.
+
+### Tanggung Jawab Admin
+
+* Memastikan seluruh pengeluaran toko dicatat dengan lengkap dan benar.
+* Memeriksa laporan secara berkala untuk mendeteksi selisih atau kejanggalan.
+* Mencocokkan laporan sistem dengan uang fisik dan bukti transaksi.
+* Menjaga kerahasiaan data keuangan toko.
+* Menyimpan arsip laporan sebagai dokumentasi.
+
+### Tanggung Jawab Kasir
+
+* Memastikan setiap transaksi penjualan diinput dengan benar agar laporan akurat.
+* Melaporkan selisih kas kepada admin pada akhir shift.
+
+### Manfaat
+
+* Kondisi keuangan toko dapat dipantau dengan jelas.
+* Laba dan rugi diketahui tanpa perhitungan manual.
+* Kesalahan pencatatan lebih mudah ditemukan.
+* Membantu menentukan strategi stok, harga, dan promosi.
