@@ -1,262 +1,90 @@
-# 👤 TUGAS ANGGOTA KELOMPOK
+# BAGIAN LOGIN DAN DASHBOARD
 
-## Nama Anggota
-
-**Yoga iskandar saputra**
-
-## Bagian yang Dikerjakan
-
-**Login & Dashboard**
-
----
-
-# 1. Halaman Login
+## 1. Login
 
 ### Pengertian
 
-Halaman Login merupakan halaman awal aplikasi yang digunakan untuk melakukan proses masuk ke dalam sistem.
+Halaman login merupakan halaman awal yang digunakan pengguna untuk masuk ke dalam aplikasi **POS & Akuntansi**. Pengguna harus memasukkan username dan password yang sudah terdaftar.
 
-Pengguna harus memasukkan **username** dan **password** yang telah terdaftar. Jika data yang dimasukkan benar, pengguna akan diarahkan ke halaman Dashboard.
+### Fungsi Login
 
-### Fungsi
-
-Halaman Login berfungsi untuk:
+Login berfungsi untuk:
 
 * Membatasi akses ke dalam aplikasi.
-* Memastikan pengguna memiliki akun yang terdaftar.
-* Melakukan proses autentikasi pengguna.
-* Mengarahkan pengguna ke Dashboard setelah berhasil login.
-
-### Tampilan Login
-
-Screenshot halaman Login:
-
-![Login](screenshots/01-login.png)
+* Memastikan pengguna yang masuk sudah terdaftar.
+* Menjaga keamanan data aplikasi.
+* Mengarahkan pengguna ke halaman utama setelah berhasil login.
 
 ### Komponen Login
 
-Halaman Login memiliki beberapa komponen:
+Pada halaman login terdapat:
 
-1. **Logo POS**
-   Menjadi identitas aplikasi.
+1. **Username** – digunakan untuk memasukkan nama pengguna.
+2. **Password** – digunakan untuk memasukkan kata sandi.
+3. **Tombol Masuk** – digunakan untuk memproses login.
+4. **Pesan kesalahan** – muncul jika username atau password salah.
 
-2. **Username**
-   Digunakan untuk memasukkan nama pengguna.
+### Cara Kerja Login
 
-3. **Password**
-   Digunakan untuk memasukkan kata sandi.
+1. Pengguna membuka aplikasi.
+2. Pengguna memasukkan username dan password.
+3. Pengguna menekan tombol **Masuk**.
+4. Sistem memeriksa data pengguna di database.
+5. Jika data benar, pengguna diarahkan ke **Dashboard**.
+6. Jika data salah, sistem menampilkan pesan **Username atau password salah**.
 
-4. **Tombol Masuk**
-   Digunakan untuk menjalankan proses login.
+### File yang Digunakan
 
-5. **Pesan Kesalahan**
-   Ditampilkan apabila username atau password yang dimasukkan tidak sesuai.
-
----
-
-# 2. Proses Login
-
-Proses Login pada aplikasi dilakukan dengan alur:
-
-```text
-Pengguna membuka aplikasi
-        ↓
-Halaman Login
-        ↓
-Masukkan Username
-        ↓
-Masukkan Password
-        ↓
-Klik "Masuk"
-        ↓
-Sistem memeriksa data
-        ↓
-Apakah data benar?
-     ↙       ↘
-   Ya         Tidak
-   ↓            ↓
-Dashboard    Pesan Error
-```
-
-Jika username dan password benar, pengguna berhasil masuk ke aplikasi.
-
-Jika salah, sistem menampilkan pesan:
-
-**"Username atau password salah."**
+* `login.php` → halaman login.
+* `config/database.php` → menghubungkan aplikasi dengan database.
+* `config/auth.php` → mengatur session dan akses pengguna.
 
 ---
 
-# 3. Keamanan Login
-
-Pada proses login, data pengguna diperiksa menggunakan database.
-
-Password pengguna tidak dibandingkan secara langsung dalam bentuk teks biasa. Sistem menggunakan proses **SHA-256** pada password ketika melakukan pemeriksaan terhadap database.
-
-Selain itu, sistem menggunakan **session** untuk menyimpan status pengguna yang telah berhasil login.
-
----
-
-# 4. Dashboard
+# 2. Dashboard
 
 ### Pengertian
 
-Dashboard adalah halaman utama yang ditampilkan setelah pengguna berhasil melakukan login.
-
-Dashboard berfungsi sebagai pusat navigasi untuk mengakses fitur-fitur utama aplikasi POS & Akuntansi.
+Dashboard merupakan halaman utama yang ditampilkan setelah pengguna berhasil login. Dashboard berfungsi sebagai pusat informasi dan menu utama aplikasi.
 
 ### Fungsi Dashboard
 
 Dashboard digunakan untuk:
 
-* Menampilkan halaman utama aplikasi.
-* Menjadi pusat navigasi.
-* Memudahkan pengguna mengakses fitur aplikasi.
-* Menghubungkan pengguna dengan menu transaksi dan pengelolaan toko.
+* Menampilkan ringkasan informasi aplikasi.
+* Memudahkan pengguna mengakses menu.
+* Menampilkan informasi terkait data toko.
+* Menjadi halaman awal untuk menjalankan fitur aplikasi.
 
-### Tampilan Dashboard
+### Menu pada Dashboard
 
-Screenshot halaman Dashboard:
+Beberapa menu yang tersedia antara lain:
 
-![Dashboard](screenshots/02-dashboard.png)
+* **Data Barang** → mengelola data barang dan stok.
+* **Supplier** → mengelola data pemasok.
+* **Penjualan** → mengelola transaksi penjualan.
+* **Pembelian** → mengelola transaksi pembelian.
+* **Laporan** → melihat laporan transaksi.
+* **Keuangan** → mengelola dan melihat informasi keuangan.
+* **Logout** → keluar dari aplikasi.
 
----
+### Cara Kerja Dashboard
 
-# 5. Menu pada Dashboard
+Setelah login berhasil, sistem membuat session pengguna dan mengarahkan pengguna ke halaman dashboard. Dari dashboard, pengguna dapat memilih menu sesuai kebutuhan.
 
-Dashboard menyediakan akses menuju beberapa fitur utama aplikasi, yaitu:
+### File yang Digunakan
 
-### 📦 Data Barang
-
-Digunakan untuk mengelola data barang dan stok.
-
-### 🏢 Supplier
-
-Digunakan untuk mengelola data pemasok barang.
-
-### 🛒 Penjualan
-
-Digunakan untuk mencatat transaksi penjualan kepada pelanggan.
-
-### 📥 Pembelian
-
-Digunakan untuk mencatat transaksi pembelian barang dari supplier.
-
-### 📊 Laporan
-
-Digunakan untuk melihat data laporan transaksi.
-
-### 💰 Keuangan
-
-Digunakan untuk mengelola dan melihat data keuangan.
-
-### 🚪 Logout
-
-Digunakan untuk keluar dari sistem.
+* `index.php` → halaman utama aplikasi.
+* `pages/dashboard.php` → menampilkan isi dashboard.
+* `config/auth.php` → mengatur session dan keamanan akses.
 
 ---
 
-# 6. Alur Penggunaan Login & Dashboard
+# 3. Kesimpulan
 
-```text
-Login
-  ↓
-Verifikasi Username & Password
-  ↓
-Berhasil Login
-  ↓
-Dashboard
-  ↓
-Pilih Menu
-  ↓
-Menggunakan Fitur Aplikasi
-```
+Bagian **Login dan Dashboard** merupakan bagian awal yang penting dalam aplikasi POS & Akuntansi. Login digunakan untuk mengatur akses pengguna, sedangkan Dashboard menjadi pusat navigasi untuk mengakses berbagai fitur aplikasi.
 
----
-
-# 7. File yang Dikerjakan
-
-Bagian Login & Dashboard menggunakan beberapa file utama:
-
-```text
-login.php
-index.php
-pages/dashboard.php
-config/auth.php
-```
-
-### login.php
-
-Digunakan untuk membuat halaman Login dan menjalankan proses autentikasi pengguna.
-
-### index.php
-
-Digunakan untuk mengarahkan pengguna ke halaman Dashboard atau Login sesuai status login.
-
-### dashboard.php
-
-Digunakan untuk menampilkan halaman Dashboard setelah pengguna berhasil login.
-
-### auth.php
-
-Digunakan untuk membantu mengatur autentikasi dan session pengguna.
-
----
-
-# 8. Pengujian Login
-
-Pengujian dilakukan untuk memastikan fitur Login dapat digunakan dengan baik.
-
-| No | Pengujian               | Hasil                         |
-| -- | ----------------------- | ----------------------------- |
-| 1  | Membuka halaman Login   | ✅ Berhasil                    |
-| 2  | Memasukkan username     | ✅ Berhasil                    |
-| 3  | Memasukkan password     | ✅ Berhasil                    |
-| 4  | Login dengan data benar | ✅ Berhasil                    |
-| 5  | Login dengan data salah | ✅ Menampilkan pesan kesalahan |
-| 6  | Masuk ke Dashboard      | ✅ Berhasil                    |
-
----
-
-# 9. Pengujian Dashboard
-
-| No | Pengujian                      | Hasil      |
-| -- | ------------------------------ | ---------- |
-| 1  | Dashboard dapat dibuka         | ✅ Berhasil |
-| 2  | Menu Data Barang dapat diakses | ✅ Berhasil |
-| 3  | Menu Supplier dapat diakses    | ✅ Berhasil |
-| 4  | Menu Penjualan dapat diakses   | ✅ Berhasil |
-| 5  | Menu Pembelian dapat diakses   | ✅ Berhasil |
-| 6  | Menu Laporan dapat diakses     | ✅ Berhasil |
-| 7  | Menu Keuangan dapat diakses    | ✅ Berhasil |
-| 8  | Logout dapat digunakan         | ✅ Berhasil |
-
----
-
-# 10. Kesimpulan Tugas Yoga
-
-Pada proyek aplikasi **POS & Akuntansi**, Yoga bertanggung jawab pada bagian **Login dan Dashboard**.
-
-Bagian Login digunakan untuk melakukan autentikasi pengguna sebelum masuk ke sistem. Setelah proses login berhasil, pengguna diarahkan ke Dashboard sebagai halaman utama aplikasi.
-
-Dashboard menyediakan navigasi menuju fitur Data Barang, Supplier, Penjualan, Pembelian, Laporan, dan Keuangan.
-
-Berdasarkan pengujian yang dilakukan, fitur Login dan Dashboard dapat digunakan dengan baik.
-
----
-
-# 📸 File Screenshot
-
-Screenshot yang digunakan untuk bagian Yoga:
-
-```text
-screenshots/
-├── 01-login.png
-└── 02-dashboard.png
-```
-
-**01-login.png** → Screenshot halaman Login.
-
-**02-dashboard.png** → Screenshot halaman Dashboard.
+**Tugas saya pada bagian ini adalah membuat dan mengelola fitur Login serta Dashboard, termasuk proses login, session pengguna, tampilan dashboard, dan navigasi menuju menu-menu aplikasi.**
 
 
 ## Nama Anggota
