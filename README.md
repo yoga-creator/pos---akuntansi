@@ -1,4 +1,9 @@
-# BAGIAN LOGIN DAN DASHBOARD
+## Nama Anggota
+**Yoga Iskandar Saputra**
+
+## Bagian yang Dikerjakan
+
+**Login & Dashboard**
 
 ## 1. Login
 
