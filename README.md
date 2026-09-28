@@ -226,3 +226,85 @@ Tambah Supplier → Buat Pembelian → Pilih Barang → Pilih Pembayaran
 → Simpan → Stok Bertambah → Tercatat di Laporan
 
 Ini saya susun berdasarkan alur umum aplikasi POS & Akuntansi. Kalau di aplikasimu ada fitur tambahan, misalnya retur pembelian, pembayaran hutang, atau cetak faktur, atau nama tombol dan kolomnya berbeda, kirim screenshot halamannya dan akan saya sesuaikan.
+
+## Nama Anggota
+**Bilal Hilmi Fauzi Adli**
+
+## Bagian yang Dikerjakan
+
+**penjualan/kasir**
+### Pengertian
+
+Halaman Penjualan (Kasir) merupakan halaman yang digunakan pengguna untuk mencatat transaksi penjualan barang kepada pelanggan di dalam aplikasi **POS & Akuntansi**. Setiap transaksi yang diproses akan tersimpan otomatis dan menjadi dasar laporan penjualan serta akuntansi toko.
+
+### Fungsi Penjualan / Kasir
+
+Penjualan / Kasir berfungsi untuk:
+
+* Mencatat transaksi penjualan secara cepat dan akurat.
+* Menghitung total belanja, diskon, dan kembalian secara otomatis.
+* Mengurangi stok barang setiap kali terjadi penjualan.
+* Menyimpan riwayat transaksi sebagai data laporan.
+* Mencetak struk sebagai bukti pembayaran pelanggan.
+
+### Pengguna yang Terlibat
+
+* **Kasir:** menjalankan transaksi penjualan sehari-hari.
+* **Admin:** mengawasi transaksi, melakukan koreksi atau pembatalan, dan memeriksa laporan penjualan.
+
+### Komponen Halaman Kasir
+
+* **Kolom pencarian produk:** untuk mencari barang berdasarkan nama atau kode/barcode.
+* **Daftar produk:** menampilkan nama barang, harga, dan stok tersedia.
+* **Keranjang belanja:** menampilkan barang yang dipilih beserta jumlah dan subtotal.
+* **Kolom jumlah (qty):** untuk mengubah banyaknya barang yang dibeli.
+* **Kolom diskon:** untuk memberikan potongan harga sesuai kebijakan toko.
+* **Total belanja:** menampilkan jumlah yang harus dibayar pelanggan.
+* **Metode pembayaran:** pilihan pembayaran seperti tunai, transfer, atau QRIS.
+* **Kolom uang diterima dan kembalian:** untuk menghitung uang kembali secara otomatis.
+* **Tombol Bayar:** menyelesaikan dan menyimpan transaksi.
+* **Tombol Batal/Hapus:** membatalkan transaksi atau menghapus barang dari keranjang.
+* **Tombol Cetak Struk:** mencetak bukti pembayaran.
+
+### Alur Transaksi Penjualan
+
+1. Kasir login ke aplikasi menggunakan username dan password.
+2. Kasir membuka menu **Penjualan / Kasir**.
+3. Kasir mencari atau memindai barang yang dibeli pelanggan.
+4. Barang masuk ke keranjang, lalu kasir mengisi jumlah barang.
+5. Kasir menerapkan diskon jika ada dan diizinkan.
+6. Sistem menghitung total belanja secara otomatis.
+7. Kasir memilih metode pembayaran dan memasukkan uang yang diterima.
+8. Sistem menampilkan jumlah kembalian.
+9. Kasir menekan tombol **Bayar** untuk menyimpan transaksi.
+10. Kasir mencetak struk dan menyerahkannya kepada pelanggan.
+
+### Proses Otomatis oleh Sistem
+
+Setelah transaksi berhasil disimpan, sistem akan:
+
+* Mengurangi stok barang sesuai jumlah yang terjual.
+* Mencatat transaksi ke riwayat penjualan.
+* Menambahkan nilai penjualan ke laporan pemasukan dan akuntansi.
+* Mencatat nama kasir dan waktu transaksi.
+
+### Tanggung Jawab Kasir
+
+* Memastikan barang dan jumlah yang diinput sesuai dengan yang dibeli pelanggan.
+* Memeriksa nominal pembayaran dan kembalian dengan teliti.
+* Tidak memberikan diskon di luar ketentuan toko.
+* Menjaga kerahasiaan akun dan selalu logout setelah selesai bertugas.
+* Melaporkan kesalahan transaksi kepada admin.
+
+### Tanggung Jawab Admin
+
+* Memastikan data produk, harga, dan stok sudah benar sebelum transaksi berjalan.
+* Memeriksa riwayat dan laporan penjualan secara berkala.
+* Menyetujui atau melakukan pembatalan dan retur transaksi.
+
+### Manfaat
+
+* Transaksi lebih cepat dan minim kesalahan hitung.
+* Stok barang selalu terupdate.
+* Laporan penjualan tersedia secara real-time.
+* Transaksi dapat dilacak per kasir dan per waktu.
