@@ -418,3 +418,6 @@ Sistem akan secara otomatis:
 * Laba dan rugi diketahui tanpa perhitungan manual.
 * Kesalahan pencatatan lebih mudah ditemukan.
 * Membantu menentukan strategi stok, harga, dan promosi.
+
+  <img width="761" height="410" alt="image" src="https://github.com/user-attachments/assets/9a1f3c33-9177-4593-9468-b537f809a53d" />
+
