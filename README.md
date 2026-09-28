@@ -147,8 +147,8 @@ Dari screenshot terlihat bahwa tugas kamu sebelumnya (di file README) adalah bag
 
 ## Bagian yang Dikerjakan
 
-##Supplier & Pembelian
-
+## Supplier & Pembelian
+ 
 **Pengertian**
 
 Menu Supplier & Pembelian digunakan untuk mengelola data pemasok (supplier) dan mencatat transaksi pembelian barang ke dalam aplikasi POS & Akuntansi. Data pembelian akan otomatis menambah stok barang dan tercatat sebagai hutang atau pengeluaran pada laporan akuntansi.
@@ -157,7 +157,7 @@ Menu Supplier & Pembelian digunakan untuk mengelola data pemasok (supplier) dan 
 
 Supplier adalah pihak yang menyediakan barang untuk dijual kembali oleh toko. Data supplier harus diisi terlebih dahulu sebelum melakukan transaksi pembelian.
 
-##Fungsi Supplier
+## Fungsi Supplier
 
 **Supplier berfungsi untuk:**
 
@@ -178,11 +178,11 @@ Tombol Ubah – digunakan untuk mengedit data supplier.
 Tombol Hapus – digunakan untuk menghapus data supplier.
 Kolom Pencarian – digunakan untuk mencari supplier tertentu.
 Pembelian
-Pengertian
+## Pengertian
 
 Pembelian adalah proses pencatatan barang yang dibeli dari supplier, baik secara tunai maupun kredit (hutang).
 
-**Fungsi Pembelian**
+## Fungsi Pembelian
 
 **Pembelian berfungsi untuk:**
 
