@@ -258,6 +258,8 @@ screenshots/
 
 **02-dashboard.png** → Screenshot halaman Dashboard.
 
+
+## Nama Anggota
 **Fadil Lutfyana Abdullah**
 
 ## Bagian yang Dikerjakan
@@ -265,11 +267,11 @@ screenshots/
 **Data Barang & Stok**
 
 ---
-Keterangan Data Barang
+**Keterangan Data Barang**
 
 Halaman ini dipakai untuk mendaftarkan barang dagangan toko ke dalam sistem. Form "Tambah Barang" punya 5 kolom:
 
-Kolom	Fungsi
+**Kolom	Fungsi**
 Kode	Kode unik barang (misalnya BRG001), supaya tiap barang mudah dibedakan dan dicari
 Nama Barang	Nama barang yang dijual (misalnya Indomie Goreng)
 Harga Beli	Harga modal, yaitu harga barang saat dibeli dari supplier
@@ -278,7 +280,7 @@ Stok	Jumlah barang yang tersedia saat ini
 
 Selisih Harga Jual − Harga Beli adalah keuntungan per barang, dan ini yang nanti dipakai di menu Laporan dan Keuangan.
 
-Keterangan Stok
+**Keterangan Stok**
 
 Stok adalah jumlah barang yang masih ada di toko. Nilainya berubah otomatis mengikuti transaksi:
 
@@ -287,7 +289,7 @@ Berkurang saat ada transaksi Penjualan (barang terjual ke pelanggan)
 
 Jadi stok awal diisi saat barang pertama kali ditambahkan, lalu selanjutnya diperbarui oleh sistem.
 
-Alur Penggunaan
+**Alur Penggunaan**
 Login sebagai Administrator/Owner.
 Masuk ke Dashboard, lalu klik menu Data Barang.
 Isi form Tambah Barang: kode, nama, harga beli, harga jual, dan stok awal.
@@ -301,6 +303,5 @@ Login → Dashboard → Data Barang → Isi Form → Simpan Barang
       → Barang muncul di daftar → Dipakai di Penjualan/Pembelian
       → Stok berubah otomatis → Masuk Laporan & Keuangan
       
-Catatan
-
+**Catatan**
 Dari screenshot terlihat bahwa tugas kamu sebelumnya (di file README) adalah bagian Login dan Dashboard. Kalau sekarang kamu perlu menulis dokumentasi untuk bagian Data Barang dan Stok, saya bisa bantu buatkan kesimpulan tugasnya dengan format yang sama seperti "10. Kesimpulan Tugas Yoga", lengkap dengan daftar screenshot-nya. Mau saya buatkan?
